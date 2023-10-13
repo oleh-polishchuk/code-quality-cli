@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "CLI tool for Linter, Prettier, and EditorConfig initialization",
   "main": "lib/index.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oleh-polishchuk/code-quality-cli.git"
@@ -10,12 +11,17 @@
   "author": "Oleh Polishchuk <oleh.polishchuk.ck@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/oleh-polishchuk/code-quality-cli#readme",
+  "preferGlobal": "true",
   "bin": {
-    "code-quality": "./lib/index.js"
+    "fashioncloud-code-quality": "./lib/index.js",
+    "fashioncloud-prettier": "./lib/prettier.js",
+    "fashioncloud-editorconfig": "./lib/editorconfig.js"
   },
   "dependencies": {
     "@fashioncloud/prettier-config": "^1.0.0",
-    "commander": "^11.0.0"
+    "cli-spinners": "^2.9.1",
+    "commander": "^11.0.0",
+    "log-update": "^5.0.1"
   },
   "devDependencies": {
     "prettier": "^3.0.3"
