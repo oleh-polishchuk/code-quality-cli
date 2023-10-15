@@ -11,11 +11,15 @@
   "author": "Oleh Polishchuk <oleh.polishchuk.ck@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/oleh-polishchuk/code-quality-cli#readme",
-  "preferGlobal": "true",
+  "preferGlobal": true,
   "bin": {
     "fashioncloud-code-quality": "./lib/index.js",
+    "fashioncloud-tslint": "./lib/tslint.js",
     "fashioncloud-prettier": "./lib/prettier.js",
     "fashioncloud-editorconfig": "./lib/editorconfig.js"
+  },
+  "scripts": {
+    "install-locally": "npm install --global . "
   },
   "dependencies": {
     "@fashioncloud/prettier-config": "^1.0.0",
